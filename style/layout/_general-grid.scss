@@ -1,0 +1,8 @@
+.general-grid-container{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  grid-template-rows: auto;
+}
