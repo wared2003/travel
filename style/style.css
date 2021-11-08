@@ -70,12 +70,11 @@ a {
 }
 
 .general-grid-container {
-  width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
-  grid-template-rows: auto;
+  width: 100%;
+  height: auto;
 }
 
 nav.navbar {
@@ -84,8 +83,6 @@ nav.navbar {
   margin-top: 40px;
   display: flex;
   justify-content: flex-end;
-  padding-left: 20px;
-  padding-right: 20px;
   align-items: center;
   position: relative;
   z-index: 5;
@@ -122,6 +119,38 @@ nav.navbar .logo {
   display: block;
   height: 40px;
   margin-right: auto;
+}
+
+.header_girl_and_planes {
+  position: relative;
+  grid-column: 6/12;
+  box-sizing: border-box;
+}
+.header_girl_and_planes .girl {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+.header_girl_and_planes .first_plane {
+  width: 135px;
+  position: absolute;
+  top: 13%;
+  left: 23%;
+}
+.header_girl_and_planes .second_plane {
+  width: 135px;
+  position: absolute;
+  top: 15%;
+  left: 83%;
+}
+
+.yellow_decoration {
+  height: 873px;
+  width: 742px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
