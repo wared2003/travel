@@ -81,6 +81,8 @@ h2 {
   position: relative;
   grid-template-columns: repeat(12, 1fr);
   width: 100%;
+  height: auto;
+  grid-template-rows: auto;
 }
 
 nav.navbar {
@@ -246,8 +248,9 @@ nav.navbar .logo {
   position: relative;
   margin-top: 150px;
   grid-column: 2/12;
+  grid-row: 3;
   width: 100%;
-  height: 1vh;
+  height: auto;
 }
 .category .category-title {
   text-align: center;
@@ -302,6 +305,80 @@ nav.navbar .logo {
   position: absolute;
   top: 0px;
   right: -100px;
+}
+
+.top_destinations_titles {
+  margin-top: 100px;
+  text-align: center;
+  grid-column: 2/12;
+  width: 100%;
+  text-align: center;
+}
+.top_destinations_titles p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #5E6282;
+}
+.top_destinations_titles h2 {
+  margin-top: 20px;
+}
+
+.top_destinations_cards {
+  grid-column: 1/-1;
+  width: 100%;
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.top-destination-card {
+  overflow: hidden;
+  position: relative;
+  width: 315px;
+  height: 457px;
+  border-radius: 24px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 35px;
+}
+.top-destination-card .destination-card-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 30px 20px;
+  padding-bottom: 0px;
+}
+.top-destination-card .destination-card-text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #5E6282;
+  font-size: 18px;
+  display: inline-block;
+}
+.top-destination-card .destination-card-text p.price {
+  display: inline-block;
+  margin-left: auto;
+  grid-column: 2/-1;
+}
+.top-destination-card .destination-card-text .trip_duration img {
+  display: inline-block;
+  grid-column: 1;
+}
+.top-destination-card .destination-card-text .trip_duration p {
+  grid-column: 1;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.top-destination-card .destination-picture {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
