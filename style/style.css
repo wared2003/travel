@@ -69,6 +69,13 @@ a {
   padding-top: 8px;
 }
 
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Volkhov", serif;
+  color: #14183E;
+}
+
 .general-grid-container {
   display: grid;
   position: relative;
@@ -147,6 +154,7 @@ nav.navbar .logo {
 }
 
 .header_hero_text {
+  position: relative;
   margin-top: 150px;
   grid-column: 2/7;
   z-index: 15;
@@ -166,6 +174,14 @@ nav.navbar .logo {
   line-height: 89px;
   letter-spacing: -4%;
   margin-top: 45px;
+}
+.header_hero_text .underline_decor {
+  width: 380px;
+  height: 12px;
+  position: relative;
+  bottom: 262px;
+  left: 265px;
+  z-index: -1;
 }
 .header_hero_text .header-text {
   font-family: "Poppins", sans-serif;
@@ -224,6 +240,68 @@ nav.navbar .logo {
   top: 0px;
   right: 0px;
   z-index: -1;
+}
+
+.category {
+  position: relative;
+  margin-top: 150px;
+  grid-column: 2/12;
+  width: 100%;
+  height: 1vh;
+}
+.category .category-title {
+  text-align: center;
+}
+.category .category-title p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #5E6282;
+}
+.category .category-title h2 {
+  margin-top: 20px;
+}
+.category .category-cards {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.category .category-cards .card {
+  box-sizing: border-box;
+  padding: 35px;
+  height: 314px;
+  width: 267px;
+  text-align: center;
+  position: relative;
+  border-radius: 36px;
+  background-color: #ffffff;
+  z-index: 5;
+}
+.category .category-cards .card h4 {
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #212832;
+}
+.category .category-cards .card p {
+  margin-top: 30px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5E6282;
+}
+.category .category-cards .card:hover {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.category .cross_category_decoration {
+  position: absolute;
+  top: 0px;
+  right: -100px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,10 +25,12 @@
 }
 
 .header_hero_text{
+  position: relative;
   margin-top: 150px;
   grid-column: 2/7;
   z-index: 15;
   width: 100%;
+
 
   .slogan{
     font-family: $popins;
@@ -45,6 +47,14 @@
     line-height: 89px;
     letter-spacing: -4%;
     margin-top: 45px;
+  }
+  .underline_decor{
+    width: 380px;
+    height: 12px;
+    position: relative;
+    bottom: 262px;
+    left: 265px;
+    z-index: -1;
   }
   .header-text{
     font-family: $popins;
